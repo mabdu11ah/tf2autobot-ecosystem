@@ -1,0 +1,37 @@
+.autobot-theme {
+  background-color: rgb(253, 124, 44) !important;
+  color: white !important;
+}
+
+button.autobot-theme:hover {
+  background-color: rgb(255, 98, 0) !important;
+  color: white !important;
+}
+
+.text-autobot-theme {
+  color: rgb(253, 124, 44);
+}
+
+.mt {
+  margin-top: 12px;
+}
+.mt-2 {
+  margin-top: 24px;
+}
+.mb {
+  margin-bottom: 12px;
+}
+.ml {
+  margin-left: 6px;
+}
+.mr {
+  margin-right: 6px;
+}
+
+.question-btn {
+  padding: 10px !important;
+}
+
+.question-btn > i {
+  margin: 0 !important;
+}

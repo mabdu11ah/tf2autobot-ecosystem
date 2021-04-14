@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>TF2Autobot Ecosystem</title>
+
+    <meta property="og:title" content="TF2Autobot Ecosystem" />
+    <meta property="og:description" content="Generate Ecosystem Files for TF2Autobot." />
+    <meta property="og:image" content="https://user-images.githubusercontent.com/47635037/100915844-e05e7380-350f-11eb-96f1-6d61141c4a44.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />
+    <link rel="stylesheet" href="static/css/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div id="header" class="ui large inverted menu attached autobot-theme">
+        <div class="ui container">
+          <div class="left menu">
+            <a href="/" class="item">TF2Autobot Ecosystem</a>
+          </div>
+          <div class="right menu">
+            <a href="https://bonfire.github.io/tf2autobot-config/" class="item">Config</a>
+            <a href="https://github.com/mabdu11ah/tf2autobot-ecosystem" class="item">Github</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="ui hidden divider"></div>
+
+      <div class="ui container">
+        <h3>General</h3>
+        <div class="ui stackable grid">
+          <div class="eight wide column">
+            <div class="ui action input fluid">
+              <input type="text" placeholder="Steam Account Name" id="STEAM_ACCOUNT_NAME" required />
+              <button
+                class="question-btn ui button"
+                onclick="window.open('https://github.com/TF2Autobot/tf2autobot/wiki/Configuring-the-bot#bot-credentials', '_blank')"
+              >
+                <i class="question circle icon"></i>
+              </button>
+            </div>
+          </div>
+          <div class="eight wide column">
+            <div class="ui action input fluid">
+              <input type="password" placeholder="Steam Account Password" id="STEAM_PASSWORD" required />
+              <button
+                class="question-btn ui button"
+                onclick="window.open('https://github.com/TF2Autobot/tf2autobot/wiki/Configuring-the-bot#bot-credentials', '_blank')"
+              >
+                <i class="question circle icon"></i>
+              </button>
+            </div>
+          </div>
+          <div class="eight wide column">
+            <div class="ui action input fluid">
+              <input type="password" placeholder="Steam Shared Secret" id="STEAM_SHARED_SECRET" required />
+              <button
+                class="question-btn ui button"
+                onclick="window.open('https://github.com/TF2Autobot/tf2autobot/wiki/Configuring-the-bot#bot-credentials', '_blank')"
+              >
+                <i class="question circle icon"></i>
+              </button>
+            </div>
+          </div>
+          <div class="eight wide column">
+            <div class="ui action input fluid">
+              <input type="password" placeholder="Steam Identity Secret" id="STEAM_IDENTITY_SECRET" required />
+              <button
+                class="question-btn ui button"
+                onclick="window.open('https://github.com/TF2Autobot/tf2autobot/wiki/Configuring-the-bot#bot-credentials', '_blank')"
+              >
+                <i class="question circle icon"></i>
+              </button>
+            </div>
+          </div>
+          <div class="eight wide column">
+            <div class="ui action input fluid">
+              <input type="text" placeholder="Backpack.tf Access Token" id="BPTF_ACCESS_TOKEN" required />
+              <button
+                class="question-btn ui button"
+                onclick="window.open('https://github.com/TF2Autobot/tf2autobot/wiki/Configuring-the-bot#backpacktf-user-token-and-api-key', '_blank')"
+              >
+                <i class="question circle icon"></i>
+              </button>
+            </div>
+          </div>
+          <div class="eight wide column">
+            <div class="ui action input fluid">
+              <input type="password" placeholder="Backpack.tf API Key" id="BPTF_API_KEY" required />
+              <button
+                class="question-btn ui button"
+                onclick="window.open('https://github.com/TF2Autobot/tf2autobot/wiki/Configuring-the-bot#backpacktf-user-token-and-api-key', '_blank')"
+              >
+                <i class="question circle icon"></i>
+              </button>
+            </div>
+          </div>
+          <div class="eight wide column">
+            <div class="ui action input fluid">
+              <input type="text" placeholder="Admins SteamID64 (Seperate with Comma)" id="ADMINS" required />
+              <button
+                class="question-btn ui button"
+                onclick="window.open('https://github.com/TF2Autobot/tf2autobot/wiki/Configuring-the-bot#owners-details-and-other-required-variables', '_blank')"
+              >
+                <i class="question circle icon"></i>
+              </button>
+            </div>
+          </div>
+          <div class="eight wide column">
+            <div class="ui action input fluid">
+              <input type="text" placeholder="Keep Friends SteamID64 (Seperate with Comma)" id="KEEP" required />
+              <button
+                class="question-btn ui button"
+                onclick="window.open('https://github.com/TF2Autobot/tf2autobot/wiki/Configuring-the-bot#owners-details-and-other-required-variables', '_blank')"
+              >
+                <i class="question circle icon"></i>
+              </button>
+            </div>
+          </div>
+          <div class="eight wide column">
+            <div class="ui action input fluid">
+              <input type="text" placeholder="Items Stats Whitelist SteamID64 (Seperate with Comma)" id="ITEM_STATS_WHITELIST" required />
+              <button
+                class="question-btn ui button"
+                onclick="window.open('https://github.com/TF2Autobot/tf2autobot/wiki/Configuring-the-bot#owners-details-and-other-required-variables', '_blank')"
+              >
+                <i class="question circle icon"></i>
+              </button>
+            </div>
+          </div>
+          <div class="eight wide column">
+            <div class="ui action input fluid">
+              <input type="text" placeholder="Groups ID (Seperate with Comma)" id="GROUPS" required />
+              <button
+                class="question-btn ui button"
+                onclick="window.open('https://github.com/TF2Autobot/tf2autobot/wiki/Configuring-the-bot#owners-details-and-other-required-variables', '_blank')"
+              >
+                <i class="question circle icon"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="ui hidden divider"></div>
+
+        <div class="ui stackable grid">
+          <div class="eight wide column">
+            <h3>Bot Profile</h3>
+            <div class="ui container">
+              <div class="ui inline mb">
+                <div class="ui checkbox">
+                  <input type="checkbox" id="SKIP_BPTF_TRADEOFFERURL" />
+                  <label>Set Trade URL on Backpack.tf</label>
+                </div>
+                <div
+                  style="display: inline-block"
+                  data-tooltip="Automatically set bot's Trade URL on Backpack.tf for classifieds. Default is disabled."
+                >
+                  <i class="question circle icon"></i>
+                </div>
+              </div>
+              <div class="ui inline">
+                <div class="ui checkbox">
+                  <input type="checkbox" name="custom-pricer" id="SKIP_UPDATE_PROFILE_SETTINGS" />
+                  <label>Update Profile Privacy Settings</label>
+                </div>
+                <div
+                  style="display: inline-block"
+                  data-tooltip="Automatically set bot's privacy settings to public so Backpack.tf can get inventory. Default is disabled."
+                >
+                  <i class="question circle icon"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="eight wide column">
+            <h3>Debug</h3>
+            <div class="ui container">
+              <div class="ui inline mb">
+                <div class="ui checkbox">
+                  <input type="checkbox" checked="checked" id="DEBUG" />
+                  <label>Enable Debug</label>
+                </div>
+                <div style="display: inline-block" data-tooltip="Automatically update prices">
+                  <i class="question circle icon"></i>
+                </div>
+              </div>
+              <div class="ui inline">
+                <div class="ui checkbox">
+                  <input type="checkbox" name="custom-pricer" id="DEBUG_FILE" checked="checked" />
+                  <label>Enable Debug File</label>
+                </div>
+                <div style="display: inline-block" data-tooltip="Use this if you have a custom autopricer. Default pricer is prices.tf.">
+                  <i class="question circle icon"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="eight wide column">
+            <h3>Timezone</h3>
+
+            <div class="ui grid">
+              <div class="eight wide column">
+                <div id="TIMEZONE" class="ui search selection dropdown fluid">
+                  <input type="hidden" name="gender" />
+                  <i class="dropdown icon"></i>
+                  <div class="default text"></div>
+                </div>
+              </div>
+              <div class="eight wide column">
+                <div class="ui action input fluid">
+                  <input type="text" placeholder="Time Additional Notes" id="TIME_ADDITIONAL_NOTES" required />
+                  <button
+                    class="question-btn ui button"
+                    onclick="window.open('https://github.com/TF2Autobot/tf2autobot/wiki/Configuring-the-bot#timezone-settings', '_blank')"
+                  >
+                    <i class="question circle icon"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="ui labeled action input fluid mt">
+              <div class="ui label">Time Format</div>
+              <input type="text" placeholder="Time Format" required value="MMMM Do YYYY, HH:mm:ss ZZ" id="CUSTOM_TIME_FORMAT" />
+              <button
+                class="question-btn ui button"
+                onclick="window.open('https://github.com/TF2Autobot/tf2autobot/wiki/Configuring-the-bot#timezone-settings', '_blank')"
+              >
+                <i class="question circle icon"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="eight wide column">
+            <h3>Alerts</h3>
+
+            <div id="ALERTS" class="ui search multiple selection dropdown fluid">
+              <input type="hidden" name="gender" />
+              <i class="dropdown icon"></i>
+              <div class="default text">Alerts</div>
+            </div>
+          </div>
+
+          <div class="eight wide column">
+            <h3>Pricing</h3>
+            <div class="ui container inline mb">
+              <div class="ui checkbox">
+                <input type="checkbox" checked="checked" id="ENABLE_SOCKET" />
+                <label>Use Socket</label>
+              </div>
+              <div style="display: inline-block" data-tooltip="Automatically update prices">
+                <i class="question circle icon"></i>
+              </div>
+            </div>
+            <div class="ui container inline">
+              <div class="ui checkbox">
+                <input type="checkbox" id="custom-pricer" />
+                <label>Use Custom Pricer</label>
+              </div>
+              <div style="display: inline-block" data-tooltip="Use this if you have a custom autopricer. Default pricer is prices.tf.">
+                <i class="question circle icon"></i>
+              </div>
+            </div>
+            <div class="ui container mt">
+              <div id="custom-pricer-div" class="ui mt" style="display: none">
+                <div class="ui input labeled fluid">
+                  <div class="ui label">Custom Pricer URL</div>
+                  <input type="text" id="CUSTOM_PRICER_URL" />
+                </div>
+
+                <div class="ui input labeled fluid mt">
+                  <div class="ui label">Custom Pricer API Token</div>
+                  <input type="text" id="CUSTOM_PRICER_API_TOKEN" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="eight wide column">
+            <h3>API</h3>
+            <div class="ui container mb">
+              <div class="ui inline">
+                <div class="ui checkbox">
+                  <input type="checkbox" id="ENABLE_HTTP_API" />
+                  <label>Enable API</label>
+                </div>
+                <div
+                  style="display: inline-block"
+                  data-tooltip="Enable API for checking Bot's Health and Uptime Programatically. Default is disabled."
+                >
+                  <i class="question circle icon"></i>
+                </div>
+              </div>
+
+              <div id="api-port-div" class="ui labeled input mt fluid" style="display: none">
+                <div class="ui label">Port</div>
+                <input id="HTTP_API_PORT" type="number" value="3001" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ui hidden divider"></div>
+
+        <div class="ui form">
+          <div class="ui container inline fields">
+            <div class="field">
+              <div class="ui radio checkbox">
+                <input id="pm2" type="radio" name="output" checked="checked" />
+                <label>PM2 (ecosystem.json)</label>
+              </div>
+            </div>
+            <div class="field">
+              <div class="ui radio checkbox">
+                <input type="radio" name="output" />
+                <label>Environment (.env)</label>
+              </div>
+            </div>
+          </div>
+
+          <button id="generate" onclick="generate()" class="ui button autobot-theme">Generate</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/semantic.min.js"></script>
+    <script src="/static/js/download.js"></script>
+    <script src="/static/js/timezones.js"></script>
+    <script src="/static/js/script.js"></script>
+  </body>
+</html>
